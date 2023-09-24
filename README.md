@@ -14,5 +14,7 @@
 - You will be presented with a preview page. At the bottom there will be 2 buttons. One of them says Re-submit. If you do not like how the resume turned out, click that button and it will be processed again.
 - Click the "__Download__" button beneath the "__Re-submit__" button. This will either download a .md file (if you chode Markdown) or a PDF (if you chose Plain Text).
 - You will be taken to a Thank You page. If you wish to be taken back to the main page, click the "__Return to Main Page__" button.
+## Video
+YouTube video on how I made it: https://youtu.be/wVJciss8YMM
 ## Credits
 By Matteo Giovanni
