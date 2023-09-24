@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<title>RapidResume</title>
+<meta name="Improve you resume in seconds by using AI technology" content="RapidResume main page">
+<meta name="AI Resume" content="Improve resume">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="icon" type="image/x-icon" href="./logo.ico">
+</head>
+<body>
+	<img src="./logo.png" id="logo">
+	<div id="main">
+		<center><p id="heading1" class="text">RapidResume</p></center>
+		<center><p id="subheading1" class="text">Improve your resume in seconds by using A.I. technology</p></center>
+
+		<hr>
+
+		<br>
+
+		<div class="parentDiv">
+			<div id="instructionsDiv">
+				<center>
+					<p id="subheading1" class="text">Parameters</p>
+				</center>
+
+				<label for="file_format" class="param_text">Choose a file format:</label> 
+				    <select name="file_format" id="file_format" class="drop_down"> 
+				        <option value="Markdown" class="drop_down_text">Markdown</option> 
+				        <option value="Plain Text" class="drop_down_text">Plain Text</option> 
+				    </select>
+
+				<br>
+
+				<label for="max_words" class="param_text">Maximum number of words:</label>
+					<input type="number" name="max_words" id="max_words" value="500" class="drop_down"> 
+
+			</div>
+
+			<div id="box" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+				<center>
+					<p class="text" id="upload">Drag File here or click the "Upload File" button</p>
+					<br>
+					<img src="./upload.png" id="image">
+					<img src="./loading.gif" id="loading">
+					<br>
+					<label class="text" id="upload_text">
+					    <input type="file" id="upload_button" name="files[]" size=1 accept=".pdf, .docx, .doc">
+					    Upload File
+					</label>
+				</center>
+			</div>
+		</div>
+
+		<br>
+
+		<center>
+			<button class="text" id="start">Start</button>
+		</center>
+	</div>
+
+	<div id="preview_parent">
+		<p id="preview_text" class="text">Preview:</p>
+		<br>
+		<div id="page">
+			<p id="preview" class="text"></p>
+		</div>
+		<div id="md" class="text"></div>
+		<center>
+			<button id="re_submit">Re-submit</button>
+			<br>
+			<button id="download">Download Resume</button>
+		</center>
+	</div>
+
+	<div id="loading2">
+		<center>
+			<img src="./loading.gif">
+			<p class="text">Updating Your Resume</p>
+		</center>
+	</div>
+
+</body>
+</html>
+<script src="dropHandler.js"></script>

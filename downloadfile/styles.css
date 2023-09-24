@@ -1,0 +1,28 @@
+body {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(217,255,247,1) 0%, rgba(0,254,255,0.5215336134453781) 100%);
+}
+
+#return_button {
+	width: 300px;
+	height: 100px;
+	font-size: 30px;
+	background-image: linear-gradient(#e66465, #9198e5);
+	border-radius: 20px;
+	border-width: 0px;
+}
+
+#main_heading {
+	font-size: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#secondary_heading {
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+	height: 25%;
+	width: 25%;
+}
